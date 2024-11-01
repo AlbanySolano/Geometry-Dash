@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd0ss6d8vay36"]
+
+[ext_resource type="Texture2D" uid="uid://blder8p0ojgqc" path="res://imagenes/cube.png" id="1_tqre8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_raac4"]
+size = Vector2(64, 64)
+
+[node name="StaticBody2D" type="StaticBody2D" groups=["kill"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.5, 3.57628e-07)
+scale = Vector2(0.177734, 0.179688)
+texture = ExtResource("1_tqre8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_raac4")
+one_way_collision = true

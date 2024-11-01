@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3hvtp6arwahf"]
+
+[ext_resource type="Texture2D" uid="uid://c4pumjnkbmr6d" path="res://imagenes/triangle.png" id="1_y8471"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtq6b"]
+size = Vector2(26, 55.75)
+
+[node name="Area2D" type="Area2D" groups=["kill"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, 0)
+scale = Vector2(0.128906, 0.124038)
+texture = ExtResource("1_y8471")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mtq6b")
+debug_color = Color(0.860875, 0.298729, 0.527515, 0.42)
