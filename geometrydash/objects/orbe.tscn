@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0vve644hx060"]
+
+[ext_resource type="Script" path="res://scripts/orbe.gd" id="1_qatij"]
+[ext_resource type="Texture2D" uid="uid://txe7mdmij6sl" path="res://imagenes/Yellow_Orb.webp" id="2_epjw6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ftnp"]
+size = Vector2(113, 100.5)
+
+[node name="orbe" type="Area2D" groups=["orbe"]]
+script = ExtResource("1_qatij")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.277073, 0.257077)
+texture = ExtResource("2_epjw6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5ftnp")
